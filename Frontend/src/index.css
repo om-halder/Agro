@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap');
+@import "tailwindcss";
+*{
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.page1 {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  overflow: hidden;
+}
+
+.bg-zoom{
+  position: absolute;
+  inset: 0;
+  
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  will-change: transform;
+}
+
+.back{
+position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.07),
+    rgba(0, 0, 0, 0.07),
+    rgba(0, 0, 0, 0.5)
+  );
+}
+
+
+.herosec{
+  padding-left: clamp(1rem, 5vw, 10rem);
+  padding-right: clamp(1rem, 5vw, 10rem);
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  gap: 2rem;
+}
+
+.hero-left,.hero-right{
+  width: 100%;
+  min-height: 70vh;
+  max-width: 50rem;
+}
+
+@media (max-width: 768px) {
+  .hero-left, .hero-right {
+    max-width: 100%;
+    min-height: auto;
+  }
+}
+
+@media (min-width: 769px) {
+  .hero-left, .hero-right {
+    width: 50rem;
+    height: 70vh;
+  }
+}
+
+.hero-middle-text{
+  color: #00F7FF;
+}
+
+.card1{
+  background: url('./assets/card1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  
+}
+.card2{
+  background: url('./assets/card2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  background-position: center;
+}
+.card3{
+  background: url('./assets/card3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  background-position: center;
+}
+
+@media (max-width: 1100px) {
+  .hero-right {
+    display: none;
+  }
+  .hero-left {
+    width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .herosec {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.register{
+  background: linear-gradient(130deg, #51be9d, transparent);
+}
+
+.register-card{
+  background-color: rgba(219, 246, 114, 0.371);
+  
+}
+
+.login{
+  background: linear-gradient(130deg, #51be9d, transparent);
+}
+
+.login-card{
+  background-color: rgba(219, 246, 114, 0.371);
+}
+
+.Left {
+   background-color: white;
+   border: 6px solid #a8d8b9;
+   background-color: #e8f5e9;
+}
+.Right {
+   background-color: white;
+   border: 6px solid #a8d8b9;
+   background-color: #e8f5e9;
+}

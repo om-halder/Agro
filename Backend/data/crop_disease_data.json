@@ -1,0 +1,516 @@
+{
+  "Apple": {
+    "Apple_scab": {
+      "treatment": [
+        "Remove and destroy infected leaves and fallen fruit to reduce spores.",
+        "Apply fungicides like myclobutanil or captan every 7–10 days during wet periods.",
+        "Monitor trees weekly and reapply as needed."
+      ],
+      "prevention": [
+        "Plant resistant varieties like 'Liberty' or 'Enterprise'.",
+        "Prune branches for better airflow.",
+        "Avoid overhead watering; water at the base of trees."
+      ],
+      "organic_methods": [
+        "Spray neem oil solution (3 ml/liter) weekly.",
+        "Apply baking soda solution (1 tsp baking soda in 1 liter water) to leaves."
+      ]
+    },
+    "Black_rot": {
+      "treatment": [
+        "Remove and destroy infected leaves, twigs, and fruits.",
+        "Apply copper-based fungicide during active infection.",
+        "Disinfect pruning tools to avoid spreading the pathogen."
+      ],
+      "prevention": [
+        "Properly space trees for good airflow.",
+        "Remove fallen leaves promptly.",
+        "Use resistant apple cultivars."
+      ],
+      "organic_methods": [
+        "Spray neem oil weekly.",
+        "Compost or burn removed infected leaves."
+      ]
+    },
+    "Cedar_apple_rust": {
+      "treatment": [
+        "Prune galls on nearby cedar trees to break the life cycle.",
+        "Apply myclobutanil fungicide when lesions appear in spring.",
+        "Repeat fungicide applications every 10–14 days during wet periods."
+      ],
+      "prevention": [
+        "Plant resistant apple varieties.",
+        "Avoid planting near cedar or juniper trees."
+      ],
+      "organic_methods": [
+        "Neem oil spray on apple and nearby cedar trees.",
+        "Regularly remove fallen leaves to reduce spores."
+      ]
+    },
+    "healthy": {
+      "treatment": [],
+      "prevention": [
+        "Regular pruning to maintain airflow.",
+        "Proper irrigation without wetting leaves.",
+        "Monitor for early signs of disease."
+      ],
+      "organic_methods": []
+    }
+  },
+  "Blueberry": {
+    "healthy": {
+      "treatment": [],
+      "prevention": [
+        "Maintain soil pH between 4.5–5.5.",
+        "Prune plants annually for airflow.",
+        "Ensure proper irrigation and avoid waterlogging."
+      ],
+      "organic_methods": [
+        "Mulch with pine needles or wood chips.",
+        "Encourage beneficial insects to control pests."
+      ]
+    }
+  },
+  "Cherry_(including_sour)": {
+    "Powdery_mildew": {
+      "treatment": [
+        "Remove infected leaves and twigs.",
+        "Apply sulfur-based fungicide or horticultural oil every 7–10 days.",
+        "Monitor regularly for white powdery patches."
+      ],
+      "prevention": [
+        "Ensure spacing between plants for airflow.",
+        "Prune dense growth in late winter.",
+        "Avoid high nitrogen fertilizers."
+      ],
+      "organic_methods": [
+        "Spray neem oil weekly.",
+        "Use milk solution (1:2 milk:water) on leaves to prevent fungus."
+      ]
+    },
+    "healthy": {
+      "treatment": [],
+      "prevention": [
+        "Regular monitoring for early disease signs.",
+        "Proper irrigation and field hygiene.",
+        "Remove fallen leaves and debris."
+      ],
+      "organic_methods": []
+    }
+  },
+  "Corn_(maize)": {
+    "Cercospora_leaf_spot Gray_leaf_spot": {
+      "treatment": [
+        "Remove and destroy infected leaves.",
+        "Apply fungicides such as azoxystrobin every 10–14 days.",
+        "Monitor during humid conditions for new spots."
+      ],
+      "prevention": [
+        "Rotate crops yearly.",
+        "Avoid overhead irrigation.",
+        "Plant resistant varieties if available."
+      ],
+      "organic_methods": [
+        "Neem oil foliar spray weekly.",
+        "Use compost tea to boost immunity."
+      ]
+    },
+    "Common_rust_": {
+      "treatment": [
+        "Apply azoxystrobin or mancozeb when pustules appear.",
+        "Remove lower infected leaves."
+      ],
+      "prevention": [
+        "Plant rust-resistant varieties.",
+        "Proper plant spacing for airflow."
+      ],
+      "organic_methods": [
+        "Neem oil spray weekly.",
+        "Introduce beneficial insects to reduce stress on plants."
+      ]
+    },
+    "healthy": {
+      "treatment": [],
+      "prevention": [
+        "Regular monitoring for early disease detection.",
+        "Proper irrigation management.",
+        "Maintain field hygiene."
+      ],
+      "organic_methods": []
+    },
+    "Northern_Leaf_Blight": {
+      "treatment": [
+        "Remove and destroy infected leaves.",
+        "Apply fungicides like chlorothalonil or mancozeb when disease is detected."
+      ],
+      "prevention": [
+        "Plant resistant varieties.",
+        "Rotate crops to reduce inoculum in soil."
+      ],
+      "organic_methods": [
+        "Neem oil spray weekly.",
+        "Introduce beneficial fungi to suppress pathogen growth."
+      ]
+    }
+  },
+  "Grape": {
+    "Black_rot": {
+      "treatment": [
+        "Remove infected leaves and berries.",
+        "Apply fungicides containing myclobutanil during the growing season.",
+        "Repeat every 7–10 days as needed."
+      ],
+      "prevention": [
+        "Plant resistant grape varieties.",
+        "Prune for good air circulation."
+      ],
+      "organic_methods": [
+        "Neem oil spray weekly.",
+        "Remove and compost infected debris."
+      ]
+    },
+    "Esca_(Black_Measles)": {
+      "treatment": [
+        "Remove and destroy affected wood.",
+        "Apply fungicides in early season if detected."
+      ],
+      "prevention": [
+        "Prune for airflow and sunlight penetration.",
+        "Avoid wounds that allow infection."
+      ],
+      "organic_methods": [
+        "Use biological control agents such as Trichoderma species."
+      ]
+    },
+    "Leaf_blight_(Isariopsis_Leaf_Spot)": {
+      "treatment": [
+        "Remove infected leaves and shoots.",
+        "Apply copper-based fungicide every 10–14 days."
+      ],
+      "prevention": [
+        "Plant resistant varieties.",
+        "Ensure proper spacing and pruning."
+      ],
+      "organic_methods": [
+        "Neem oil spray weekly.",
+        "Compost removed infected leaves."
+      ]
+    },
+    "healthy": {
+      "treatment": [],
+      "prevention": [
+        "Regular monitoring for pests and diseases.",
+        "Proper irrigation and field hygiene."
+      ],
+      "organic_methods": []
+    }
+  },
+  "Orange": {
+    "Haunglongbing_(Citrus_greening)": {
+      "treatment": [
+        "Remove infected trees immediately to prevent spread.",
+        "Use insecticides to control psyllid vectors.",
+        "Monitor remaining trees weekly."
+      ],
+      "prevention": [
+        "Plant certified disease-free seedlings.",
+        "Introduce natural predators of psyllids.",
+        "Maintain good orchard hygiene."
+      ],
+      "organic_methods": [
+        "Use neem oil to deter psyllids.",
+        "Mulch and compost to strengthen tree immunity."
+      ]
+    }
+  },
+  "Peach": {
+    "Bacterial_spot": {
+      "treatment": [
+        "Remove and destroy infected leaves and fruit.",
+        "Apply copper-based bactericide during wet periods."
+      ],
+      "prevention": [
+        "Plant resistant peach varieties.",
+        "Ensure proper pruning for airflow."
+      ],
+      "organic_methods": [
+        "Neem oil spray weekly.",
+        "Maintain orchard hygiene."
+      ]
+    },
+    "healthy": {
+      "treatment": [],
+      "prevention": [
+        "Monitor for early signs of disease.",
+        "Maintain proper irrigation and pruning."
+      ],
+      "organic_methods": []
+    }
+  },
+  "Pepper,_bell": {
+    "Bacterial_spot": {
+      "treatment": [
+        "Remove infected leaves and fruit.",
+        "Apply copper-based bactericide as needed."
+      ],
+      "prevention": [
+        "Avoid overhead watering.",
+        "Plant resistant varieties."
+      ],
+      "organic_methods": [
+        "Neem oil spray weekly.",
+        "Mulch around plants to prevent soil splash."
+      ]
+    },
+    "healthy": {
+      "treatment": [],
+      "prevention": [
+        "Regular monitoring for disease and pests.",
+        "Maintain proper irrigation and pruning."
+      ],
+      "organic_methods": []
+    }
+  },
+  "Potato": {
+    "Early_blight": {
+      "treatment": [
+        "Remove infected leaves and stems.",
+        "Apply fungicides like chlorothalonil or mancozeb every 7–10 days.",
+        "Ensure good drainage to reduce humidity."
+      ],
+      "prevention": [
+        "Plant certified disease-free tubers.",
+        "Rotate crops annually."
+      ],
+      "organic_methods": [
+        "Neem oil spray weekly.",
+        "Apply compost tea to boost plant immunity."
+      ]
+    },
+    "Late_blight": {
+      "treatment": [
+        "Remove and destroy infected plants immediately.",
+        "Apply fungicides like mancozeb or copper-based sprays promptly.",
+        "Avoid wetting leaves during irrigation."
+      ],
+      "prevention": [
+        "Plant resistant potato varieties.",
+        "Rotate crops annually."
+      ],
+      "organic_methods": [
+        "Neem oil foliar spray.",
+        "Mulch to reduce soil splash."
+      ]
+    },
+    "healthy": {
+      "treatment": [],
+      "prevention": [
+        "Monitor crops regularly for disease.",
+        "Maintain proper irrigation and field hygiene."
+      ],
+      "organic_methods": []
+    }
+  },
+  "Raspberry": {
+    "healthy": {
+      "treatment": [],
+      "prevention": [
+        "Prune regularly for airflow.",
+        "Monitor for pests and diseases.",
+        "Maintain proper irrigation."
+      ],
+      "organic_methods": []
+    }
+  },
+  "Soybean": {
+    "healthy": {
+      "treatment": [],
+      "prevention": [
+        "Rotate crops to reduce soil pathogens.",
+        "Ensure proper spacing and irrigation."
+      ],
+      "organic_methods": []
+    }
+  },
+  "Squash": {
+    "Powdery_mildew": {
+      "treatment": [
+        "Remove and destroy infected leaves.",
+        "Apply sulfur-based fungicide every 7–10 days.",
+        "Ensure proper airflow around plants."
+      ],
+      "prevention": [
+        "Plant resistant varieties.",
+        "Avoid overhead watering."
+      ],
+      "organic_methods": [
+        "Neem oil spray weekly.",
+        "Milk solution (1:2 milk:water) on leaves."
+      ]
+    }
+  },
+  "Strawberry": {
+    "Leaf_scorch": {
+      "treatment": [
+        "Remove infected leaves and fruit.",
+        "Apply copper-based fungicide during infection.",
+        "Monitor for spread regularly."
+      ],
+      "prevention": [
+        "Ensure proper irrigation and spacing.",
+        "Plant resistant varieties if available."
+      ],
+      "organic_methods": [
+        "Neem oil spray weekly.",
+        "Maintain good field hygiene."
+      ]
+    },
+    "healthy": {
+      "treatment": [],
+      "prevention": [
+        "Regularly monitor for early signs of disease.",
+        "Ensure proper irrigation and spacing."
+      ],
+      "organic_methods": []
+    }
+  },
+  "Tomato": {
+    "Bacterial_spot": {
+      "treatment": [
+        "Remove infected leaves and fruits.",
+        "Apply copper-based bactericide as needed.",
+        "Avoid overhead watering."
+      ],
+      "prevention": [
+        "Plant resistant varieties.",
+        "Rotate crops annually."
+      ],
+      "organic_methods": [
+        "Neem oil spray weekly.",
+        "Mulch to prevent soil splash."
+      ]
+    },
+    "Early_blight": {
+      "treatment": [
+        "Remove infected leaves and fruits.",
+        "Apply fungicides like chlorothalonil or mancozeb every 7–10 days.",
+        "Ensure proper drainage."
+      ],
+      "prevention": [
+        "Rotate crops annually.",
+        "Plant resistant varieties."
+      ],
+      "organic_methods": [
+        "Neem oil spray weekly.",
+        "Compost tea to boost immunity."
+      ]
+    },
+    "Late_blight": {
+      "treatment": [
+        "Remove and destroy infected plants immediately.",
+        "Apply mancozeb or copper-based sprays promptly.",
+        "Avoid wetting foliage during irrigation."
+      ],
+      "prevention": [
+        "Plant resistant tomato varieties.",
+        "Rotate crops annually."
+      ],
+      "organic_methods": [
+        "Neem oil foliar spray weekly.",
+        "Mulch to reduce soil splash."
+      ]
+    },
+    "Leaf_Mold": {
+      "treatment": [
+        "Remove infected leaves.",
+        "Apply fungicides like chlorothalonil every 7–10 days."
+      ],
+      "prevention": [
+        "Ensure proper spacing and airflow.",
+        "Avoid overhead watering."
+      ],
+      "organic_methods": [
+        "Neem oil weekly spray.",
+        "Maintain field hygiene."
+      ]
+    },
+    "Septoria_leaf_spot": {
+      "treatment": [
+        "Remove infected leaves and destroy them.",
+        "Apply fungicides such as chlorothalonil every 7–10 days."
+      ],
+      "prevention": [
+        "Rotate crops annually.",
+        "Avoid wetting leaves during irrigation."
+      ],
+      "organic_methods": [
+        "Neem oil weekly spray.",
+        "Mulch to prevent soil splash."
+      ]
+    },
+    "Spider_mites_Two-spotted_spider_mite": {
+      "treatment": [
+        "Spray miticide or insecticidal soap on infested areas.",
+        "Remove severely affected leaves."
+      ],
+      "prevention": [
+        "Maintain adequate irrigation; spider mites prefer dry conditions.",
+        "Introduce predatory mites as biological control."
+      ],
+      "organic_methods": [
+        "Neem oil spray weekly.",
+        "Use predatory mites like Phytoseiulus persimilis."
+      ]
+    },
+    "Target_Spot": {
+      "treatment": [
+        "Remove infected leaves and destroy them.",
+        "Apply copper-based fungicide weekly."
+      ],
+      "prevention": [
+        "Rotate crops annually.",
+        "Avoid wetting foliage."
+      ],
+      "organic_methods": [
+        "Neem oil weekly spray.",
+        "Maintain good sanitation."
+      ]
+    },
+    "Tomato_mosaic_virus": {
+      "treatment": [
+        "Remove and destroy infected plants immediately.",
+        "Control insect vectors like aphids."
+      ],
+      "prevention": [
+        "Use certified virus-free seeds.",
+        "Sanitize tools and hands when handling plants."
+      ],
+      "organic_methods": [
+        "Introduce natural predators to control aphids.",
+        "Remove infected plant debris promptly."
+      ]
+    },
+    "Tomato_Yellow_Leaf_Curl_Virus": {
+      "treatment": [
+        "Remove infected plants immediately.",
+        "Control whitefly populations with insecticidal soap or neem oil."
+      ],
+      "prevention": [
+        "Use resistant varieties if available.",
+        "Monitor and control whitefly regularly."
+      ],
+      "organic_methods": [
+        "Neem oil spray weekly.",
+        "Introduce natural predators like ladybugs for whiteflies."
+      ]
+    },
+    "healthy": {
+      "treatment": [],
+      "prevention": [
+        "Regular monitoring for early disease signs.",
+        "Maintain proper irrigation and spacing."
+      ],
+      "organic_methods": []
+    }
+  }
+}
