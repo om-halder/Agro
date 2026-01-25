@@ -1,12 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Navbar from '../Components/Navbar'
-import Shuffle from "../Components/ui/Shuffle";
+
+
 import PillNav from '@/Components/ui/PillNav';
 import logo from "../assets/logo1.svg";
-import Masonry from '@/Components/ui/Masonry';
-import StaggeredMenu from '@/Components/ui/StaggeredMenu';
-import CardSwap,{Card} from '@/Components/ui/CardSwap';
+
+
 import { guestNav, userNav } from "../config/navConfig";
 import { useAuth } from "../auth/AuthContext";
 import CircularGallery from '@/Components/ui/CircularGallery';
