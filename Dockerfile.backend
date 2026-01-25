@@ -1,0 +1,30 @@
+FROM node:20-alpine
+
+WORKDIR /app
+
+# Copy package files
+COPY Backend/package*.json ./
+
+# Install production dependencies only and clean cache
+RUN npm ci --only=production && \
+    npm cache clean --force && \
+    find node_modules -name "*.md" -type f -delete && \
+    find node_modules -name "*.txt" -type f -delete && \
+    find node_modules -name "LICENSE" -type f -delete
+
+# Copy application code
+COPY Backend/src ./src
+COPY Backend/config ./config
+COPY Backend/models ./models
+
+# Copy environment file
+COPY .env.production .env
+
+# Health check
+HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
+    CMD node -e "require('http').get('http://localhost:5000/health', (r) => {if (r.statusCode !== 200) throw new Error(r.statusCode)})"
+
+EXPOSE 5000
+
+ENV NODE_ENV=production
+CMD ["npm", "start"]

@@ -1,0 +1,21 @@
+Set-Content -Path .gitignore -Value @"
+# Python
+venv/
+*.pyc
+__pycache__/
+.env
+
+# Node
+node_modules/
+dist/
+build/
+
+# Large ML / media files
+*.h5
+
+*.mov
+*.zip
+
+# System
+.DS_Store
+"@
