@@ -14,19 +14,11 @@
   "dependencies": {
     "@gsap/react": "^2.1.2",
     "@radix-ui/react-slot": "^1.2.4",
-<<<<<<< HEAD
-    "@studio-freight/lenis": "^1.0.42",
-=======
->>>>>>> 72ee0cc505d33f5c4edbd89c97e75d3dc8b10818
     "@tailwindcss/vite": "^4.1.18",
     "axios": "^1.13.2",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
-<<<<<<< HEAD
-    "firebase": "^9.23.0",
-=======
     "firebase": "^12.7.0",
->>>>>>> 72ee0cc505d33f5c4edbd89c97e75d3dc8b10818
     "gsap": "^3.14.2",
     "lenis": "^1.3.17",
     "lucide-react": "^0.562.0",
@@ -48,10 +40,6 @@
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.4.24",
     "globals": "^16.5.0",
-<<<<<<< HEAD
-    "terser": "^5.46.0",
-=======
->>>>>>> 72ee0cc505d33f5c4edbd89c97e75d3dc8b10818
     "vite": "^7.2.4"
   }
 }
