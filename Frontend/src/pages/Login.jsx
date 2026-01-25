@@ -13,7 +13,7 @@ const Login = () => {
 
   useEffect(() => {
     if (currentUser) {
-      navigate("/dashboard");
+      navigate("/");
     }
   }, [currentUser, navigate]);
 
@@ -24,7 +24,7 @@ const Login = () => {
 
     try {
       await login(email, password);
-      navigate("/dashboard");
+      navigate("/");
     } catch (err) {
       setError(err.message);
     }

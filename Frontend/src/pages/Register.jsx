@@ -14,7 +14,7 @@ const Register = () => {
 
   useEffect(() => {
     if (currentUser) {
-      navigate("/dashboard");
+      navigate("/");
     }
   }, [currentUser, navigate]);
 
