@@ -10,6 +10,7 @@ node_modules/
 dist/
 build/
 
+Backend/firebaseAdminKey.json
 # Large ML / media files
 *.h5
 
