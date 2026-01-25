@@ -10,9 +10,12 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+<<<<<<< HEAD
   optimizeDeps: {
     include: ['firebase/app', 'firebase/auth', 'firebase/firestore'],
   },
+=======
+>>>>>>> 72ee0cc505d33f5c4edbd89c97e75d3dc8b10818
   build: {
     target: "es2020",
     minify: "terser",
@@ -27,6 +30,10 @@ export default defineConfig({
         manualChunks: {
           vendor: ["react", "react-dom"],
           router: ["react-router-dom"],
+<<<<<<< HEAD
+=======
+          firebase: ["firebase"],
+>>>>>>> 72ee0cc505d33f5c4edbd89c97e75d3dc8b10818
         },
       },
     },

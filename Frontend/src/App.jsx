@@ -10,7 +10,10 @@ const Register = lazy(() => import("./pages/Register"));
 
 const Profile = lazy(() => import("./pages/Profile"));
 const CropProblem = lazy(() => import('./pages/CropProblem'));
+<<<<<<< HEAD
 const CommunityChat = lazy(() => import('./pages/CommunityChat'));
+=======
+>>>>>>> 72ee0cc505d33f5c4edbd89c97e75d3dc8b10818
 function App() {
   const lenis = useLenis((lenis) => {
     // called every scroll
@@ -45,6 +48,7 @@ function App() {
               </PrivateRoute>
             }
           />
+<<<<<<< HEAD
           <Route
             path="/chat"
             element={
@@ -53,6 +57,8 @@ function App() {
               </PrivateRoute>
             }
           />
+=======
+>>>>>>> 72ee0cc505d33f5c4edbd89c97e75d3dc8b10818
           <Route path="/loading" element={<Loading/>}/>
         </Routes>
       </Suspense>
