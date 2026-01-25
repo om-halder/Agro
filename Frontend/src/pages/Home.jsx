@@ -335,7 +335,7 @@ const socialItems = [
           <div className="border-t border-gray-700 pt-8 mt-8">
             <div className="flex flex-col md:flex-row justify-between items-center gap-4">
               <div className="text-gray-400 text-sm text-center md:text-left">
-                © {new Date().getFullYear()} Made by Team LYNX _ AKA ------ OM & Sahid -------
+                © {new Date().getFullYear()} Made by Team LYNX _ AKA ------ Shahzad & OM & Sahid ------- 
               </div>
               <div className="flex flex-wrap justify-center md:justify-end gap-6 text-sm">
                 <Link to="/privacy" className="text-gray-400 hover:text-green-400 transition-colors">
