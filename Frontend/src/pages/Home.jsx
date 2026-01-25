@@ -44,7 +44,7 @@ const socialItems = [
       <div className="page1">
         <video
         className="fixed inset-0 w-full h-full object-cover -z-10"
-        src="/src/assets/bgvid1.mp4"
+        src="/public/assets/bgvid1.mp4"
         autoPlay
         muted
         loop
