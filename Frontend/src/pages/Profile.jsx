@@ -169,7 +169,7 @@ const Profile = () => {
         {/* Header */}
         <div className="mb-8">
           <button
-            onClick={() => navigate("/dashboard")}
+            onClick={() => navigate("/")}
             className="text-gray-600 hover:text-gray-800 mb-6 flex items-center gap-2 transition-colors duration-200 group"
           >
             <svg 
@@ -180,7 +180,7 @@ const Profile = () => {
             >
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
             </svg>
-            <span className="font-medium">Back to Dashboard</span>
+            <span className="font-medium">Back to HomePage</span>
           </button>
           <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-2">My Profile</h1>
           <p className="text-gray-600 text-lg">Manage your account information and preferences</p>

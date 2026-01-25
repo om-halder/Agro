@@ -1,15 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap');
+
 @import "tailwindcss";
-*{
+
+* {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
 }
+
 body {
   font-family: "Poppins", sans-serif;
-  background-color: gray;
+  background: gray;
 }
 
+/* Background layers */
 .page1 {
   position: fixed;
   inset: 0;
@@ -17,18 +21,17 @@ body {
   overflow: hidden;
 }
 
-.bg-zoom{
+.bg-zoom {
   position: absolute;
   inset: 0;
-  
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   will-change: transform;
 }
 
-.back{
-position: absolute;
+.back {
+  position: absolute;
   inset: 0;
   background: linear-gradient(
     to right,
@@ -39,8 +42,8 @@ position: absolute;
   );
 }
 
-
-.herosec{
+/* Hero */
+.herosec {
   padding-left: clamp(1rem, 5vw, 10rem);
   padding-right: clamp(1rem, 5vw, 10rem);
   position: relative;
@@ -49,7 +52,76 @@ position: absolute;
   gap: 2rem;
 }
 
-/* Custom Animations */
+.hero-left,
+.hero-right {
+  width: 100%;
+  min-height: 70vh;
+  max-width: 50rem;
+}
+
+.hero-middle-text {
+  color: #00f7ff;
+}
+
+/* Cards */
+.card1 {
+  background: url("./assets/card1.jpg") center / cover no-repeat;
+  overflow: hidden;
+}
+
+.card2 {
+  background: url("./assets/card2.jpg") center / cover no-repeat;
+  overflow: hidden;
+}
+
+.card3 {
+  background: url("./assets/card3.jpg") center / cover no-repeat;
+  overflow: hidden;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+  .hero-right {
+    display: none;
+  }
+  .hero-left {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-left,
+  .hero-right {
+    max-width: 100%;
+    min-height: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .herosec {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* Auth pages */
+.register,
+.login {
+  background: linear-gradient(130deg, #51be9d, transparent);
+}
+
+.register-card,
+.login-card {
+  background-color: rgba(219, 246, 114, 0.371);
+}
+
+.Left,
+.Right {
+  border: 6px solid #a8d8b9;
+  background-color: #e8f5e9;
+}
+
+/* Animations */
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -84,7 +156,8 @@ position: absolute;
 }
 
 @keyframes gradient {
-  0%, 100% {
+  0%,
+  100% {
     background-position: 0% 50%;
   }
   50% {
@@ -119,110 +192,4 @@ position: absolute;
 
 .delay-2000 {
   animation-delay: 2000ms;
-}
-
-.hero-left,.hero-right{
-  width: 100%;
-  min-height: 70vh;
-  max-width: 50rem;
-}
-
-@media (max-width: 768px) {
-  .hero-left, .hero-right {
-    max-width: 100%;
-    min-height: auto;
-  }
-}
-
-@media (min-width: 769px) {
-  .hero-left, .hero-right {
-    width: 50rem;
-    height: 70vh;
-  }
-}
-
-.hero-middle-text{
-  color: #00F7FF;
-}
-
-.card1{
-  background: url('./assets/card1.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
-  
-}
-.card2{
-  background: url('./assets/card2.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden;
-  background-position: center;
-}
-.card3{
-  background: url('./assets/card3.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden;
-  background-position: center;
-}
-
-@media (max-width: 1100px) {
-  .hero-right {
-    display: none;
-  }
-  .hero-left {
-    width: 100%;
-  }
-}
-
-@media (max-width: 640px) {
-  .herosec {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-}
-
-.register{
-  background: linear-gradient(130deg, #51be9d, transparent);
-}
-
-.register-card{
-  background-color: rgba(219, 246, 114, 0.371);
-  
-}
-
-.login{
-  background: linear-gradient(130deg, #51be9d, transparent);
-}
-
-.login-card{
-  background-color: rgba(219, 246, 114, 0.371);
-}
-
-.Left {
-   background-color: white;
-   border: 6px solid #a8d8b9;
-   background-color: #e8f5e9;
-}
-.Right {
-   background-color: white;
-   border: 6px solid #a8d8b9;
-   background-color: #e8f5e9;
-}
-
-@keyframes fade-in {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.animate-fade-in {
-  animation: fade-in 0.3s ease-out;
 }
