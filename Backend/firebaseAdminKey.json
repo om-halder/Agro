@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "agro-connect-f2eea",
+  "private_key_id": "c6c3c354a325ffab594097ea48427a37833820fc",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDXR7Wpofp2IYjY\naPvojHN48hDolMbvkWiq9HDGfDUwd1PT4KGAqbGMtGYrM6KjZnc4CluNUqUoLY8n\nBGeUComQLxSYHyG6TNqEHWIRYjr5vWG3n8gAAZiCiD/YkkGTiE+Mkirz5+9qrx2y\naDA/5rkp4rRFRsvZ8YebQLzQQbKRc3xut79e+G6SQGmKeBaDsjQ4U37gZ88oi3BG\nYUS/VV+5aRNbOon+/qzo0moKyZ9BJf1f53lMMcCt00fExizi1D1fdXc4QQudP2oz\niutxYKxeopSg8zr4e7P8jnQ1TkN/HXj0WxsrWIacnOj7WCm5fVxN/1FiBZzgKw9n\ntW7+XtQHAgMBAAECggEARpzyZORJC6N/SADTlBkxrRu1WRynzh/jdaO9NBW8upuB\nZw+Y2eOPZegsVQJYWAF9nGelVQslOjMLcBBdSy1TpvQSbL1Vak7YJBqhNrOCRbWN\nTlY+G2ZqmHJJgueiU9qTwTeWmC9dFCDBfGn5XZR36tm+KLUKm3/Ca7XF2Qebo2Jj\n/dQ7mchaZ42NYs60RiNXFZYvQk61UBd1M5NciGuOQc5c0lkfwXvkZ849otrAv+PK\nkkNknNl3/7BOuYtCWMO1u5GrzsCjAfRjtOJABNCB25LdEuheq07jGoRD1kfpuWDl\nLiHX5xmQXZsqvGxZ15lElRJhZIrEywo57wh6IUO7tQKBgQD/t4mkXTX18PsNSKfz\nc51tNXquB5tgY6uDqIoaIFz9FBdIRi3BvUqmWSb1N/810ABXesLDOIwhb00oD6o5\ncs3dIxpwmupaHUIWMVmuGkWhhRFan7E3rG+72vALjTf5fdeWYEckJmBf07y1jPSy\nIXpqACdgfS3OJrGvErAcHKi8RQKBgQDXhLahUMCFmZKE2zLkA1A97bADAd9wGWmx\n7dT5VSPPIDA1aJFbZV5gxlwViHfsbStDd54WoBmIiDTpe2MJWw15Qk+pBfocQBl2\nB3HXNu7ylBscuT7NcVzYAJExELKtST/B2jcbkxKnu31h8kRPbnvbBiiC3MdbeOji\nv9/l5nuB2wKBgQCbOGiHacEIceeiL5krEOHdWZoHKzzobHe+6j4yD7UCNgDP8TFz\nKZi3kuQv83apzoF2mGDCqX9+CBaYm7GjP4mwks9IzPA2FQ55dClQokfj/GcFUGv9\nNGF6cTJGgMkaW4XSlMx6KAVWBavFtDMQMXwh/cfpLPLx8NDoSXq3Bbpy1QKBgFlV\nBFJ3Y2W9U1NIfJ6wlOkmhaepdhFEJ2B+QaIb3Vz0baclseKdcPJSJkcyqurQEXfE\ntD2SnSLPuobxAwsUt9AEYXqhJJvjIeqfiVt4xLC+HULZsiN8Eszh50zcLAPR8eCL\nb/45BymJeJ5JynDWTfZqZg5gLy5GPtoGSGtGDvmzAoGBAMSybIeh1Wde767DTgW8\nM5yh2+sp3KJ2mFhTm7E5cwIJDy7f9CCZj1WWaMwjNtVrmQOknwrfQ6ioAmwda2O6\nUvfoflIBcD82AaSTGJdFfejF5oKnoC5lbA8HPX5mh46X7LoKOLt4gy8x/vDt8Ep/\nWWLd6Z86G1graNLfGh3knE+2\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-fbsvc@agro-connect-f2eea.iam.gserviceaccount.com",
+  "client_id": "112249098701148033564",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-fbsvc%40agro-connect-f2eea.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

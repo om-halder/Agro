@@ -37,11 +37,18 @@ app.get("/health", (req, res) => {
   res.json({ status: "ok" });
 });
 
+// Start server
+app.listen(process.env.PORT || 5000, () => {
+  console.log(`Server running on port ${process.env.PORT || 5000}`);
+});
+
+// Connect to MongoDB
 mongoose
   .connect(process.env.MONGO_URI)
-  .then(() => {
-    app.listen(process.env.PORT || 5000, () => {
-      console.log(`Server running on port ${process.env.PORT || 5000}`);
-    });
-  })
-  .catch((err) => console.log(err));
+  .then(() => console.log("Connected to MongoDB"))
+  .catch((err) => console.log("MongoDB connection failed:", err));
+
+// Handle unhandled promise rejections
+process.on('unhandledRejection', (err) => {
+  console.log('Unhandled Rejection:', err);
+});
