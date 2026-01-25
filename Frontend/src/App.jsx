@@ -1,13 +1,15 @@
+import React, { Suspense, lazy } from 'react';
 import { ReactLenis, useLenis } from 'lenis/react'
 import {  Routes, Route } from "react-router-dom";
-import Home from './pages/Home';
-import Login from "./pages/Login";
-import Register from "./pages/Register";
-import Dashboard from "./pages/Dashboard";
-import PrivateRoute from "./auth/PrivateRoute";
-import Profile from "./pages/Profile";
 import Loading from "./pages/Loading";
-import CropProblem from './pages/CropProblem';
+import PrivateRoute from "./auth/PrivateRoute";
+
+const Home = lazy(() => import('./pages/Home'));
+const Login = lazy(() => import("./pages/Login"));
+const Register = lazy(() => import("./pages/Register"));
+
+const Profile = lazy(() => import("./pages/Profile"));
+const CropProblem = lazy(() => import('./pages/CropProblem'));
 function App() {
   const lenis = useLenis((lenis) => {
     // called every scroll
@@ -18,38 +20,33 @@ function App() {
   return (
     <>
       <ReactLenis root />
-      <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
-        <Route
-          path="/dashboard"
-          element={
-            <PrivateRoute>
-              <Dashboard />
-            </PrivateRoute>
-          }
-        />
-        
-        <Route
-          path="/crop"
-          element={
-            <PrivateRoute>
-              <CropProblem />
-            </PrivateRoute>
-          }
-        />
+      <Suspense fallback={<Loading />}>
+        <Routes>
+          <Route path="/" element={<Home/>}/>
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          
+          
+          <Route
+            path="/crop"
+            element={
+              <PrivateRoute>
+                <CropProblem />
+              </PrivateRoute>
+            }
+          />
 
-<Route
-          path="/profile"
-          element={
-            <PrivateRoute>
-              <Profile />
-            </PrivateRoute>
-          }
-        />
-        <Route path="/loading" element={<Loading/>}/>
-      </Routes>
+  <Route
+            path="/profile"
+            element={
+              <PrivateRoute>
+                <Profile />
+              </PrivateRoute>
+            }
+          />
+          <Route path="/loading" element={<Loading/>}/>
+        </Routes>
+      </Suspense>
     </>
   )
 }

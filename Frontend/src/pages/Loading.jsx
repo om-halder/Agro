@@ -1,57 +1,25 @@
-import { useEffect, useState } from "react";
+import fruitBasket from '../assets/fruit_basket.gif';
 
-const PlantLoader = () => {
-  const [grow, setGrow] = useState(false);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setGrow(false);
-      setTimeout(() => setGrow(true), 100);
-    }, 2000);
-
-    return () => clearInterval(interval);
-  }, []);
-
+const Loading = () => {
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-green-50">
-      
-      {/* Plant */}
-      <div className="relative w-20 h-40">
-        
-        {/* Stem */}
-        <div
-          className={`absolute bottom-10 left-1/2 w-1.5 bg-green-800 origin-bottom 
-          transition-all duration-1000 ease-out
-          ${grow ? "h-24" : "h-0"}`}
-          style={{ transform: "translateX(-50%)" }}
+    <div className="load flex flex-col items-center justify-center h-screen ">
+      <div className="text-center">
+        <img
+          src={fruitBasket}
+          alt="Loading..."
+          className="w-48 h-48 mx-auto mb-4 drop-shadow-lg"
         />
-
-        {/* Left Leaf */}
-        <div
-          className={`absolute left-1 top-16 w-6 h-3 bg-green-500 rounded-full 
-          transition-all duration-700 delay-500
-          ${grow ? "opacity-100 scale-100" : "opacity-0 scale-0"}
-          rotate-[-30deg]`}
-        />
-
-        {/* Right Leaf */}
-        <div
-          className={`absolute right-1 top-12 w-6 h-3 bg-green-500 rounded-full 
-          transition-all duration-700 delay-700
-          ${grow ? "opacity-100 scale-100" : "opacity-0 scale-0"}
-          rotate-[30deg]`}
-        />
-
-        {/* Pot */}
-        <div className="absolute bottom-0 w-full h-10 bg-amber-900 rounded-b-xl" />
+        <p className="text-green-800 font-bold text-2xl">
+          Harvesting Freshness...
+        </p>
+        <div className="mt-4 flex justify-center space-x-2">
+          <div className="w-3 h-3 bg-orange-500 rounded-full animate-bounce"></div>
+          <div className="w-3 h-3 bg-yellow-500 rounded-full animate-bounce" style={{ animationDelay: '0.1s' }}></div>
+          <div className="w-3 h-3 bg-green-500 rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></div>
+        </div>
       </div>
-
-      {/* Loading Text */}
-      <p className="mt-6 text-green-900 font-medium animate-pulse">
-        Growing...
-      </p>
     </div>
   );
 };
 
-export default PlantLoader;
+export default Loading;
