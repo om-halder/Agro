@@ -4,7 +4,10 @@ import tailwindcss from "@tailwindcss/vite";
 import path from "path";
 
 export default defineConfig({
+  base: "/", // ✅ ADD THIS LINE (MOST IMPORTANT)
+
   plugins: [react(), tailwindcss()],
+
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
@@ -17,7 +20,7 @@ export default defineConfig({
 
   build: {
     target: "es2020",
-    minify: true, // use esbuild (default, fast, stable)
+    minify: true,
     rollupOptions: {
       output: {
         manualChunks: {
