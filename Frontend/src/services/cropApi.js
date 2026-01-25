@@ -1,5 +1,8 @@
+const BASE_URL =
+  import.meta.env.VITE_BACKEND_URL || "http://localhost:5000";
+
 export async function analyzeCrop(formData) {
-  const res = await fetch("http://localhost:5000/api/crop/analyze", {
+  const res = await fetch(`${BASE_URL}/api/crop/analyze`, {
     method: "POST",
     body: formData,
   });

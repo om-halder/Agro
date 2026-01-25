@@ -7,6 +7,7 @@ const Profile = () => {
   const { currentUser, logout } = useAuth();
   const navigate = useNavigate();
   const fileInputRef = useRef(null);
+  const BASE_URL = import.meta.env.VITE_BACKEND_URL || "http://localhost:5000";
 
   const [loading, setLoading] = useState(true);
   const [saving, setSaving] = useState(false);
@@ -39,13 +40,19 @@ const Profile = () => {
       setSuccess("");
 
       // Get Firebase ID token
-      const token = await currentUser.getIdToken();
+      const token = await currentUser.getIdToken(true);
+      console.log("TOKEN:", token);
 
-      const response = await axios.get("http://localhost:5000/api/user/profile", {
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
-      });
+      
+
+const response = await axios.get(
+  `${BASE_URL}/api/user/profile`,
+  {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+  }
+);
 
       setFormData({
         name: response.data.name || "",
@@ -110,7 +117,7 @@ const Profile = () => {
       const token = await currentUser.getIdToken();
 
       await axios.put(
-        "http://localhost:5000/api/user/profile",
+        `${BASE_URL}/api/user/profile`,
         formData,
         {
           headers: {
