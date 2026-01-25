@@ -42,16 +42,19 @@ const socialItems = [
 
       {/* FIXED BACKGROUND */}
       <div className="page1">
-        <video
-        className="fixed inset-0 w-full h-full object-cover -z-10"
-        src="/public/assets/bgvid1.mp4"
-        autoPlay
-        muted
-        loop
-        playsInline
-      />
-        <div className="back"></div>
-      </div>
+  <video
+    className="fixed inset-0 w-full h-full object-cover -z-10"
+    autoPlay
+    muted
+    loop
+    playsInline
+    preload="auto"
+  >
+    <source src="/bgvid1.mp4" type="video/mp4" />
+  </video>
+
+  <div className="back"></div>
+</div>
 
       {/* CONTENT */}
       <PillNav
