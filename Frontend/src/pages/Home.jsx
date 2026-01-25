@@ -42,16 +42,10 @@ const socialItems = [
 
       {/* FIXED BACKGROUND */}
       <div className="page1">
-  <video
-    className="fixed inset-0 w-full h-full object-cover -z-10"
-    autoPlay
-    muted
-    loop
-    playsInline
-    preload="auto"
-  >
-    <source src="/bgvid1.mp4" type="video/mp4" />
-  </video>
+  <div
+    className="fixed w-full h-full object-cover -z-10 bg-cover bg-center"
+    style={{ backgroundImage: "url('/bgimg0.jpg')" }}
+  ></div>
 
   <div className="back"></div>
 </div>
@@ -86,7 +80,7 @@ const socialItems = [
             <span className="hero-middle-text">Farmers</span> <br />
             To Solutions
           </h1>
-          <p className='text-white/90' style={{ fontSize: "clamp(1rem, 1.4vw, 1.5rem)" }}>Empowering farmers with AI-powered crop disease detection and smart agricultural solutions.</p>
+          <p className='text-white/90 text-center md:text-left' style={{ fontSize: "clamp(1rem, 1.4vw, 1.5rem)" }}>Empowering farmers with AI-powered crop disease detection and smart agricultural solutions.</p>
           <div className='mt-8 flex flex-col sm:flex-row gap-4'>
             <Link
               to="/Crop"
