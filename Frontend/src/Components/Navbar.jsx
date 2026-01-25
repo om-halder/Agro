@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { guestNav, userNav } from "../config/navConfig";
 import { useAuth } from "../auth/AuthContext";
-import { Button } from "../components/ui/button";
+import { Button } from "../Components/ui/button";
 import Shuffle from "./ui/Shuffle";
 
 const Navbar = () => {
