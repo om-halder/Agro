@@ -5,7 +5,7 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Dashboard from "./pages/Dashboard";
 import PrivateRoute from "./auth/PrivateRoute";
-
+import Profile from "./pages/Profile";
 import Loading from "./pages/Loading";
 import CropProblem from './pages/CropProblem';
 function App() {
@@ -30,7 +30,24 @@ function App() {
             </PrivateRoute>
           }
         />
-        <Route path="/Crop" element={<CropProblem/>}/>
+        
+        <Route
+          path="/crop"
+          element={
+            <PrivateRoute>
+              <CropProblem />
+            </PrivateRoute>
+          }
+        />
+
+<Route
+          path="/profile"
+          element={
+            <PrivateRoute>
+              <Profile />
+            </PrivateRoute>
+          }
+        />
         <Route path="/loading" element={<Loading/>}/>
       </Routes>
     </>

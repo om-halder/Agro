@@ -1,14 +1,15 @@
 export const guestNav = [
   { label: "Home", path: "/" },
-  { label: "Explore Crops", path: "/explore" },
+  { label: "Explore Crops", path: "/crop" },
   { label: "Community", path: "/community" },
   { label: "Login", path: "/login" },
   { label: "Register", path: "/register" },
 ];
 
 export const userNav = [
+  { label: "Home", path: "/" },
+  { label: "Analyze Crop", path: "/crop" },
   { label: "Dashboard", path: "/dashboard" },
-  { label: "Analyze Crop", path: "/analyze" },
-  { label: "My History", path: "/history" },
   { label: "Community", path: "/community" },
+  { label: "Profile", path: "/profile" },
 ];
