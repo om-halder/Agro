@@ -34,7 +34,7 @@ export const getMessages = (groupId, callback) => {
       const messages = [];
       querySnapshot.forEach((doc) => {
         messages.push({ id: doc.id, ...doc.data() });
-      });
+      }); 
       callback(messages);
     }, (error) => {
       console.warn('Error getting messages from Firestore, using local mode:', error.message);
