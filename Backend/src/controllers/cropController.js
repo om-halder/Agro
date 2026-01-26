@@ -39,18 +39,18 @@ export const analyzeCropProblem = async (req, res) => {
     }
 
     // Step 1: Get ML prediction
-    console.log(`🌾 Predicting disease for ${crop}...`);
+    console.log(` Predicting disease for ${crop}...`);
     const mlResult = await predictDisease(req.file.buffer, crop);
 
     if (!mlResult.success) {
-      console.warn("⚠️ ML model failed:", mlResult.error);
+      console.warn(" ML model failed:", mlResult.error);
       return res.status(500).json({
         message: "Disease detection failed",
         error: mlResult.error,
       });
     }
 
-    console.log(`✅ ML Prediction: ${mlResult.disease} (${mlResult.confidence}%)`);
+    console.log(` ML Prediction: ${mlResult.disease} (${mlResult.confidence}%)`);
 
     // Step 2: Lookup JSON data instead of OpenAI
     const diseaseData = getDiseaseInfo(crop, mlResult.disease);
