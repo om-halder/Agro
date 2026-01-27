@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: agroconnect-ml-model
+    env: docker
+    dockerfilePath: ./Dockerfile
+    region: oregon
+    plan: starter
+    healthCheckPath: /health
+    
+    # Environment variables
+    envVars:
+      - key: FLASK_ENV
+        value: production
+      - key: PORT
+        value: 5000
+    
+    # Autoscaling (optional - for paid plans)
+    # scaling:
+    #   minInstances: 1
+    #   maxInstances: 3
+    #   targetCpuUtilization: 70
+    #   targetMemoryUtilization: 80
