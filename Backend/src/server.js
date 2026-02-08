@@ -59,7 +59,7 @@ app.use(
 );
 
 // Let cors handle preflight
-app.options("*", cors());
+app.use(cors());
 
 
 // ===== Body Parser =====
