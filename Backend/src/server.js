@@ -32,31 +32,34 @@ if (!admin.apps.length) {
 // ===== CORS Configuration (FINAL) =====
 
 // Allow multiple origins from env (comma separated)
-const allowedOrigins = (
-  process.env.FRONTEND_URL ||
-  "http://localhost:5173,https://agro-connect-f2eea.web.app,https://agro-connect-f2eea.firebaseapp.com"
-)
-  .split(",")
-  .map((o) => o.trim());
+const allowedOrigins = [
+  "http://localhost:5173",
+  "https://agro-connect-f2eea.web.app",
+  "https://agro-connect-f2eea.firebaseapp.com",
+];
 
-const corsOptions = {
+app.use(cors({
   origin: function (origin, callback) {
     if (!origin) return callback(null, true);
-
     if (allowedOrigins.includes(origin)) {
       return callback(null, true);
     }
-
-    console.log("Blocked by CORS:", origin);
     return callback(new Error("Not allowed by CORS"));
   },
-  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-  allowedHeaders: ["Content-Type", "Authorization"],
   credentials: true,
-};
+}));
 
-app.use(cors(corsOptions));
-
+// Handle preflight manually (Express v5 safe)
+app.use((req, res, next) => {
+  if (req.method === "OPTIONS") {
+    res.header("Access-Control-Allow-Origin", req.headers.origin);
+    res.header("Access-Control-Allow-Methods", "GET,POST,PUT,DELETE,OPTIONS");
+    res.header("Access-Control-Allow-Headers", "Content-Type, Authorization");
+    res.header("Access-Control-Allow-Credentials", "true");
+    return res.sendStatus(200);
+  }
+  next();
+});
 
 
 // ===== Body Parser =====
