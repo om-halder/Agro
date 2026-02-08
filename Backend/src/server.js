@@ -1,4 +1,4 @@
-// src/server.js
+ // src/server.js
 import dotenv from "dotenv";
 dotenv.config();
 import express from "express";
@@ -29,26 +29,37 @@ if (!admin.apps.length) {
 }
 
 // ===== CORS Configuration =====
-const allowedOrigins = [
-  process.env.FRONTEND_URL || "http://localhost:5173",
-];
+// Support comma-separated FRONTEND_URL env (e.g. "https://app.example.com,http://localhost:5173")
+const frontendEnv = process.env.FRONTEND_URL || "http://localhost:5173";
+const allowedOrigins = frontendEnv.split(",").map((s) => s.trim()).filter(Boolean);
 
 app.use(cors({
-  origin: allowedOrigins,
+  origin: function (origin, callback) {
+    // Allow non-browser requests (Postman, server-to-server) with no origin
+    if (!origin) return callback(null, true);
+    // Allow when origin is in list or wildcard '*' present
+    if (allowedOrigins.includes("*") || allowedOrigins.includes(origin)) {
+      return callback(null, true);
+    }
+    return callback(new Error("Not allowed by CORS"), false);
+  },
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization"],
   credentials: true,
 }));
 
-// ===== OPTIONS preflight middleware =====
-app.use((req, res, next) => {
-  if (req.method === "OPTIONS") {
-    res.header("Access-Control-Allow-Origin", allowedOrigins.join(","));
+// ===== OPTIONS preflight handler =====
+app.options("*", (req, res) => {
+  const origin = req.headers.origin;
+  if (origin && (allowedOrigins.includes("*") || allowedOrigins.includes(origin))) {
+    res.header("Access-Control-Allow-Origin", origin);
     res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
     res.header("Access-Control-Allow-Headers", "Content-Type, Authorization");
+    res.header("Access-Control-Allow-Credentials", "true");
     return res.sendStatus(200);
   }
-  next();
+  // No matching origin - respond with 204 No Content
+  return res.sendStatus(204);
 });
 
 // ===== Body Parser =====
